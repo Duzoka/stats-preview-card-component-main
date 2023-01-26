@@ -3,6 +3,9 @@
     --main-BG: hsl(233, 47%, 7%);
     --card-BG: hsl(244, 38%, 16%);
     --accent: hsl(277, 64%, 61%);
+    --txt-MH: hsl(0, 0%, 100%);
+    --txt-MP: hsla(0, 0%, 100%, 0.75);
+    --txt-SH: hsla(0, 0%, 100%, 0.75);
 
 }
 
@@ -12,6 +15,7 @@ body {
     place-items: center;
     min-height: 100vh;
     display: grid;
+    font-size: 0.938rem;
 
     
 }
@@ -21,7 +25,7 @@ body {
 .card-container {
     margin: 1rem 2rem;
     max-width: 980px;
-    height: 490px;
+    height: 400px;
 
 }
 
@@ -38,14 +42,24 @@ body {
 .img-header {
     position: relative;
     width: 50%;
-    border-radius: 12px;
 }
 
 .img-header img {
     width: 100%;
     height: 100%;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+    
+}
+
+.img-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(277, 76%, 30%, 0.5);
+    
+
 }
 
 /* Turning on hidden to mobile image */
@@ -63,24 +77,56 @@ body {
 .txt-section {
     display: block;
     width: 50%; 
-    padding: 3rem;
+    padding: 2rem 4rem;
     
 
 }
 
 .txt-section .text-header {
     width: 100%;
-    height: 50%;
-
+    height: 60%;
 }
+
+.txt-section .text-header h1 {
+    margin-bottom: 2rem;
+}
+
+/* text decoration  */
+
+.txt-section a {
+    color: var(--accent);
+}
+
+.txt-section h1 {
+    color: var(--txt-MH);
+    
+}
+
+.txt-section p {
+    color: var(--txt-MP);
+}
+
+/* text flex */
 
 .txt-section .flex {
     width: 100%;
-    height: 50%;
+    height: 40%;
     display: flex;
-    gap: 4.3rem;
-    
+    font-size: 0.829rem;
+
 }
+
+.txt-section .flex .paragraphs {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.txt-section .flex .paragraphs p {
+    text-transform: uppercase;
+}
+
+
 
 
 
