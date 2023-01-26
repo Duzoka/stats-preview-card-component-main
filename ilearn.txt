@@ -1,0 +1,6 @@
+:root{
+    --Example: black;
+}
+
+background: var(--Example);
+
