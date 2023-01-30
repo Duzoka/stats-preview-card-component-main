@@ -1,0 +1,97 @@
+@media (max-width: 375px) {
+
+  * {
+    overflow-y: visible;
+  }
+
+    .card-container {
+        margin: 1rem 2rem;
+        max-width: 375px;
+        height: auto;
+    
+    }
+
+
+    .img-header::after {
+        height: 98.9%;
+        ;
+    }
+
+
+
+    .card-container {
+        margin: 1rem 2rem;
+        width: 980px;
+        height: auto;
+    }
+
+
+    
+    .card-wrapper {
+        flex-direction: column-reverse; 
+    }
+
+
+
+    .img-header {
+        width: 100%;
+    }
+
+    .img-header img {
+        border-bottom-left-radius: 15px;
+        
+    }
+
+   .txt-section {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 0 1rem ;
+
+   }
+
+   .txt-section .text-header {
+    display: block;
+    text-align: center;
+    padding: 15px 15px 0;
+}
+
+.txt-section .text-header h1 {
+    margin: 10px;
+}
+
+.txt-section .text-header p {
+    padding: 10px;
+}
+
+   .txt-section .flex {
+    display: block;
+    text-align: center;
+    gap: 20px;
+    height: 100%;
+   }
+
+   .txt-section .flex .paragraphs {
+    display: grid;
+    gap: 1rem;
+}
+
+.txt-section .flex .paragraphs p,h1 {
+    margin: 0.313rem;
+
+}
+
+
+}
+
+@media (max-width: 1440px) {
+    .txt-section .text-header {
+
+        height: 100%;
+        
+    }
+}
+
+.txt-section .flex {
+    height: 100%;
+
+}

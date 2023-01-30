@@ -1,20 +1,13 @@
-:root {
 
-    --main-BG: hsl(233, 47%, 7%);
-    --card-BG: hsl(244, 38%, 16%);
-    --accent: hsl(277, 64%, 61%);
-    --txt-MH: hsl(0, 0%, 100%);
-    --txt-MP: hsla(0, 0%, 100%, 0.75);
-    --txt-SH: hsla(0, 0%, 100%, 0.75);
-
-}
 
 body {
 
     background: var(--main-BG) ;
-    place-items: center;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    display: grid;
+    min-width: 100vw;
+    display: flex;
     font-size: 0.938rem;
 
     
@@ -25,7 +18,7 @@ body {
 .card-container {
     margin: 1rem 2rem;
     max-width: 980px;
-    height: 400px;
+    height: auto;
 
 }
 
@@ -42,6 +35,7 @@ body {
 .img-header {
     position: relative;
     width: 50%;
+    max-height: 100%;
 }
 
 .img-header img {
@@ -64,22 +58,21 @@ body {
 
 /* Turning on hidden to mobile image */
 
-.card-container .card-wrapper .mobile-img {
+/* .card-container .card-wrapper .mobile-img {
 
     visibility: hidden;
 
-}
+} */
 
 /* ---------------------------------------- */
 
 /* Text's configuration */
 
 .txt-section {
-    display: block;
+    display: grid;
     width: 50%; 
-    padding: 2rem 4rem;
-    
-
+    padding: 2rem 4rem;  
+    gap: 18px;
 }
 
 .txt-section .text-header {
