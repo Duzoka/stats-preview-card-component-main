@@ -36,7 +36,7 @@ body {
     position: relative;
     width: 50%;
     max-height: 100%;
-    background-color: #954fb2; 
+    background-color: hsl(277, 64%, 61%); 
 }
 
 .img-header img {
